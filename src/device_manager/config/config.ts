@@ -51,6 +51,12 @@ const config: DeviceManagerConfig = {
       width: '320px',
       widthMedia: '480px',
     },
+    {
+      id: 'deetsTerminal',
+      name: 'Deets Terminal',
+      width: '824px',
+      widthMedia: '1024px',
+    },
   ],
 };
 

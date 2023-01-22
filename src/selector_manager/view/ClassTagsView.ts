@@ -16,7 +16,7 @@ export default class ClassTagsView extends View<Selector> {
         <div id="${pfx}status-c" class="${pfx}header-status">
           <span id="${pfx}input-c" data-states-c>
             <div class="${ppfx}field ${ppfx}select">
-              <span id="${ppfx}input-holder">
+              <span id="${ppfx}input-holder ">
                 <select id="${pfx}states" data-states></select>
               </span>
               <div class="${ppfx}sel-arrow">
