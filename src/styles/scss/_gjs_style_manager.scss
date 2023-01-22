@@ -88,10 +88,10 @@
 
   input,
   select {
-    background-color: transparent;
-    color: $mainLhlColor;
-    border: none;
-    width: 100%;
+    // background-color: transparent;
+    // color: $mainLhlColor;
+    // border: none;
+    // width: 100%;
   }
 
   input {
@@ -99,24 +99,24 @@
   }
 
   select {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
 
-    @include appearance(none);
+    // @include appearance(none);
 
     &::-ms-expand {
-      display: none;
+      //   display: none;
     }
   }
 
   select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 $mainLhlColor;
+    // color: transparent;
+    // text-shadow: 0 0 0 $mainLhlColor;
   }
 
   input:focus,
   select:focus {
-    outline: none;
+    // outline: none;
   }
 
   .#{$sm-prefix}unit {
@@ -177,8 +177,8 @@
   &.#{$sm-prefix}integer,
   &.#{$sm-prefix}list,
   &.#{$sm-prefix}select {
-    background-color: $mainDkColor;
-    border: 1px solid rgba(226, 23, 23, 0.1);
+    // background-color: $mainDkColor;
+    // border: 1px solid rgba(226, 23, 23, 0.1);
     // box-shadow: 1px 1px 0 $mainLhColor;
     color: $mainLhlColor;
     border-radius: 2px;
@@ -191,15 +191,15 @@
   }
 
   &.#{$sm-prefix}select {
-    padding: 0;
+    // padding: 0;
   }
 
   &.#{$sm-prefix}select select {
-    height: 20px;
+    // height: 20px;
   }
 
   &.#{$sm-prefix}select option {
-    padding: 3px 0;
+    // padding: 3px 0;
   }
 
   &.#{$sm-prefix}composite {
@@ -237,8 +237,8 @@
   }
 
   &.#{$sm-prefix}integer select {
-    width: auto;
-    padding: 0;
+    // width: auto;
+    // padding: 0;
   }
 }
 
