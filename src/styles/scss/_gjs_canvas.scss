@@ -191,16 +191,15 @@ $guide_pad: 5px !default;
 }
 
 .#{$cv-prefix}canvas {
-  background-color: rgba(0, 0, 0, 0.15);
+  //   background-color: rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   width: calc(calc(100% - $leftWidth) - 20px);
   height: calc(100% - #{$canvasTop});
-  bottom: 0;
-
+  left: 10px;
+  bottom: 10px;
   overflow: hidden;
   z-index: 1;
   position: absolute;
-  left: 0;
   top: $canvasTop;
 
   &.#{$cui-cls} {

@@ -16,8 +16,7 @@ export default class DevicesView extends View {
 
   template({ ppfx, label }: { ppfx: string; label: string }) {
     return html`
-      <span changeDeviceToDesktop class="${ppfx}pn-btn fa fa-desktop text-gray-200"></span>
-      <span changeDeviceToDeetsTerminal class="${ppfx}pn-btn text-gray-200">
+      <span changeDeviceToDeetsTerminal class="${ppfx}pn-btn ">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fill-rule="evenodd"
@@ -26,6 +25,7 @@ export default class DevicesView extends View {
           />
         </svg>
       </span>
+      <span changeDeviceToDesktop class="${ppfx}pn-btn fa fa-desktop "></span>
       <span changeDeviceToMobile class="${ppfx}pn-btn fa fa-mobile"></span>
     `;
   }
