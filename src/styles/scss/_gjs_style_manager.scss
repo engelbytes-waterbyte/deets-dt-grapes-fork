@@ -17,7 +17,7 @@
   // Sector
   &sector {
     clear: both;
-    font-weight: lighter;
+    font-weight: semi-bold;
     text-align: left;
 
     &-title {
@@ -355,14 +355,13 @@
 }
 
 .#{$sm-prefix}layer {
-  //   background-color: rgba(255, 255, 255, 0.055);
   border-radius: 5px;
   margin: 2px 0;
   padding: 7px;
   position: relative;
 
   &.#{$sm-prefix}active {
-    background-color: rgba(254, 21, 21, 0.12);
+    background-color: rgba(181, 181, 181, 0.12);
   }
 
   .#{$sm-prefix}label-wrp {
