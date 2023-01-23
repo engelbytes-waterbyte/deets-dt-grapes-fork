@@ -27,7 +27,6 @@
 
 .#{$app-prefix}block {
   @include user-select(none);
-
   width: 45%;
   min-width: 45px;
   padding: 1em;
@@ -40,13 +39,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border: 1.2px solid #f1f1f1ea;
+  border-radius: 8px;
   margin: 10px 2.5% 5px;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
+  //   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease 0s;
   transition-property: box-shadow, color;
-
+  border-radius: 10px;
   &:hover {
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
   }
@@ -79,8 +78,8 @@
 .#{$app-prefix}block-label {
   line-height: normal;
   font-size: 0.65rem;
-  font-weight: normal;
-  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-family: Inter;
   overflow: hidden;
   text-overflow: ellipsis;
   pointer-events: none;

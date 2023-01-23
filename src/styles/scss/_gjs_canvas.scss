@@ -2,6 +2,15 @@ $frameAnimation: 0.35s ease !default;
 $canvasTop: 60px !default;
 $guide_pad: 5px !default;
 
+@mixin shadow-lg() {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .#{$prefix} {
   &guide-info {
     position: absolute;
@@ -114,7 +123,7 @@ $guide_pad: 5px !default;
     left: 0;
     right: 0;
     margin: auto;
-
+    @include shadow-lg;
     &--anim {
       transition: width $frameAnimation, height $frameAnimation;
     }
@@ -192,10 +201,12 @@ $guide_pad: 5px !default;
 
 .#{$cv-prefix}canvas {
   //   background-color: rgba(0, 0, 0, 0.15);
+
   box-sizing: border-box;
-  width: calc(calc(100% - $leftWidth) - 20px);
+  width: calc(calc(100% - $leftWidth) - 30px);
   height: calc(100% - #{$canvasTop});
   left: 10px;
+
   bottom: 10px;
   overflow: hidden;
   z-index: 1;
