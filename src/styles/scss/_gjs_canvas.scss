@@ -201,7 +201,6 @@ $guide_pad: 5px !default;
 
 .#{$cv-prefix}canvas {
   //   background-color: rgba(0, 0, 0, 0.15);
-
   box-sizing: border-box;
   width: calc(calc(100% - $leftWidth) - 20px);
   height: calc(100% - #{$canvasTop});
