@@ -203,9 +203,9 @@ $guide_pad: 5px !default;
   //   background-color: rgba(0, 0, 0, 0.15);
 
   box-sizing: border-box;
-  width: calc(calc(100% - $leftWidth) - 30px);
+  width: calc(calc(100% - $leftWidth) - 20px);
   height: calc(100% - #{$canvasTop});
-  left: 10px;
+  left: 0px;
 
   bottom: 10px;
   overflow: hidden;
