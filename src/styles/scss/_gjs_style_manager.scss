@@ -10,7 +10,7 @@
   &header {
     font-size: 0.8em;
 
-    font-weight: semi-bold;
+    font-weight: 700;
     padding: 10px;
   }
 
@@ -35,6 +35,7 @@
 
     &-label {
       margin-left: 5px;
+      font-weight: bold;
     }
 
     &.#{$sm-prefix}open {
@@ -88,10 +89,9 @@
 
   input,
   select {
-    // background-color: transparent;
-    // color: $mainLhlColor;
-    // border: none;
-    // width: 100%;
+    color: $mainLhlColor;
+    border: none;
+    width: 100%;
   }
 
   input {
@@ -99,19 +99,19 @@
   }
 
   select {
-    // position: relative;
-    // z-index: 1;
+    position: relative;
+    z-index: 1;
 
-    // @include appearance(none);
+    @include appearance(none);
 
     &::-ms-expand {
-      //   display: none;
+      display: none;
     }
   }
 
   select:-moz-focusring {
-    // color: transparent;
-    // text-shadow: 0 0 0 $mainLhlColor;
+    color: transparent;
+    text-shadow: 0 0 0 $mainLhlColor;
   }
 
   input:focus,
@@ -191,20 +191,23 @@
   }
 
   &.#{$sm-prefix}select {
-    // padding: 0;
+    padding: 0;
   }
 
   &.#{$sm-prefix}select select {
-    // height: 20px;
+    height: 20px;
   }
 
   &.#{$sm-prefix}select option {
-    // padding: 3px 0;
+    padding: 3px 0;
   }
 
   &.#{$sm-prefix}composite {
-    background-color: $mainDklColor;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    // background-color: $mainDklColor;
+
+    border: 1px solid #f1f1f1ea;
+    border-radius: 0.4em;
+    box-sizing: border-box;
   }
 
   &.#{$sm-prefix}list {
@@ -224,7 +227,7 @@
     }
 
     .#{$sm-prefix}radio:checked + label {
-      background-color: rgba(255, 255, 255, 0.2);
+      //   background-color: rgba(255, 255, 255, 0.2);
     }
 
     .#{$sm-prefix}icon {
@@ -237,8 +240,8 @@
   }
 
   &.#{$sm-prefix}integer select {
-    // width: auto;
-    // padding: 0;
+    width: auto;
+    padding: 0;
   }
 }
 
@@ -352,7 +355,7 @@
 }
 
 .#{$sm-prefix}layer {
-  background-color: rgba(255, 255, 255, 0.055);
+  //   background-color: rgba(255, 255, 255, 0.055);
   border-radius: 5px;
   margin: 2px 0;
   padding: 7px;

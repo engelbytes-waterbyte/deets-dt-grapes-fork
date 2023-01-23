@@ -17,11 +17,7 @@ export default class ClassTagsView extends View<Selector> {
           <span id="${pfx}input-c" data-states-c>
             <div class="${ppfx}field ${ppfx}select">
               <span id="${ppfx}input-holder">
-                <select
-                  id="${pfx}states"
-                  data-states
-                  class="text-sm h-11 border-[1.2px]  border-neutral-300 focus:border-neutral-300 text-gray-900 bg-gray-50 rounded-lg focus:ring-[3px] focus:ring-blue-300/70  cursor-pointer"
-                ></select>
+                <select id="${pfx}states" data-states></select>
               </span>
             </div>
           </span>

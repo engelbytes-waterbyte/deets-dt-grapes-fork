@@ -12,7 +12,8 @@
   border-radius: 2px;
   padding: 3px;
   margin-right: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #f1f1f1ea;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -38,11 +39,15 @@
 
   &tag {
     display: flex;
-    overflow: hidden;
+
     align-items: center;
     border-radius: 5px;
+
     margin: 0 3px 3px 0;
     padding: 5px;
+    background-color: $colorBlue;
+    box-shadow: 0px 0px 5px $colorBlue;
+    color: white;
     cursor: pointer;
 
     &-status,
@@ -100,12 +105,13 @@
     display: flex;
     flex-wrap: wrap;
     vertical-align: top;
-    overflow: hidden;
   }
 
   ##{$clm-prefix}new {
     @extend .#{$app-prefix}invis-invis;
-
+    border: 1px solid #f1f1f1ea;
+    color: rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
     color: $fontColor;
     padding: $paddElClm;
     display: none;
@@ -116,7 +122,7 @@
     font-size: 20px;
     line-height: 0;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
     @extend .no-select;
 
     &:hover {
@@ -125,7 +131,7 @@
   }
 
   ##{$clm-prefix}checkbox {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
     vertical-align: middle;
     cursor: pointer;
     font-size: 9px;

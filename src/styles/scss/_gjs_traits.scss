@@ -1,7 +1,8 @@
 .#{$app-prefix} {
   &traits-label {
-    border-bottom: 1px solid $mainDkColor;
-    font-weight: lighter;
+    border-bottom: 1px solid #f1f1f1ea;
+    box-sizing: border-box;
+    font-weight: semi-bold;
     margin-bottom: 5px;
     padding: 10px;
     text-align: left;
@@ -11,7 +12,9 @@
     &-wrp {
       width: 30%;
       min-width: 30%;
+      font-weight: semi-bold;
     }
+    font-weight: semi-bold;
   }
 
   &field {
@@ -22,7 +25,7 @@
 }
 
 .#{$trt-prefix}header {
-  font-weight: normal;
+  font-weight: 700;
   font-size: 0.8em;
   padding: 10px;
 }
@@ -31,9 +34,9 @@
   display: flex;
   justify-content: flex-start;
   padding: 5px 10px;
-  font-weight: lighter;
   align-items: center;
   text-align: left;
+  font-weight: semi-bold;
 
   &s {
     font-size: $fontSizeS;
@@ -43,5 +46,6 @@
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-weight: semi-bold;
   }
 }

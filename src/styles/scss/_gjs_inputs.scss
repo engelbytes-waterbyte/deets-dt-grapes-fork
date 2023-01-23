@@ -26,18 +26,29 @@
   }
 
   &select {
-    // padding: 0;
-    // width: 100%;
+    padding: 0;
+    width: 100%;
 
+    height: 1.8em;
+    border: 1px solid #f1f1f1ea;
+    border-radius: 0.1em;
+    box-sizing: border-box;
+    color: $mainLhColor;
     select {
-      //   padding-right: 10px;
+      padding-right: 10px;
+      //text-sm h-11 border-[1.2px]  border-neutral-300 focus:border-neutral-300 text-gray-900 bg-gray-50 rounded-lg focus:ring-[3px] focus:ring-blue-300/70  cursor-pointer
+      height: 1.8em;
+      border: 1px solid #f1f1f1ea;
+      border-radius: 0.1em;
+      box-sizing: border-box;
+      color: $mainLhColor;
     }
   }
 
   &select:-moz-focusring,
   &select select:-moz-focusring {
-    // color: transparent;
-    // text-shadow: 0 0 0 $mainLhlColor;
+    color: transparent;
+    text-shadow: 0 0 0 $mainLhlColor;
   }
 
   &input:focus,
@@ -46,6 +57,48 @@
   &select:focus,
   &select select:focus {
     // outline: none;
+    outline: none;
+  }
+
+  &field {
+    input,
+    select,
+    textarea {
+      @include appearance(none);
+
+      color: inherit;
+      border: none;
+      background-color: transparent;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+      padding: $inputPadding;
+      z-index: 1;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    &-range {
+      flex: 9 1 auto;
+    }
+
+    &-integer {
+      input {
+        padding-right: 30px;
+      }
+    }
   }
 }
 
@@ -55,18 +108,18 @@
 .#{$sm-prefix}select option,
 .#{$app-prefix}fields option,
 .#{$sm-prefix}unit option {
-  //   background-color: $mainColor;
-  //   color: $fontColor;
+  // background-color: $mainColor;
+  color: $fontColor;
 }
 
 .#{$app-prefix}field {
   //   background-color: $mainDkColor;
-  //   border: none;
-  //   box-shadow: none;
-  //   border-radius: 2px;
-  //   box-sizing: border-box;
-  //   padding: 0;
-  //   position: relative;
+  border: none;
+  box-shadow: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
 
   textarea {
     resize: vertical;
@@ -194,7 +247,9 @@
   }
 
   input:checked + .#{$app-prefix}radio-item-label {
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #a3a3a3ea;
+    box-sizing: border-box;
   }
 
   &s {
@@ -248,7 +303,7 @@
 }
 
 .#{$app-prefix}field-select {
-  //   padding: 0;
+  padding: 0;
 }
 
 .#{$app-prefix}field-range {
@@ -298,7 +353,7 @@
 .#{$app-prefix}btn {
   &-prim {
     color: inherit;
-    // background-color: $mainLhColor;
+    background-color: $mainLhColor;
     border-radius: 2px;
     padding: 3px 6px;
     padding: $inputPadding;

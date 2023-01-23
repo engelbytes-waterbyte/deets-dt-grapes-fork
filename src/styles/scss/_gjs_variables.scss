@@ -36,8 +36,8 @@ $mainDkColor: rgba(
   0.2
 ) !default; /* darken($mainColor, 4%) - #383838 */
 $mainDklColor: rgba(0, 0, 0, 0.1) !default;
-$mainLhColor: rgba(255, 255, 255, 0.1) !default; /* #515151 */
-$mainLhlColor: rgba(255, 255, 255, 0.7) !default;
+$mainLhColor: #909090 !default; /* #515151 */
+$mainLhlColor: #909090 !default;
 $fontColorDk: #777 !default;
 $colorBlue: #0071f5 !default;
 $colorRed: #dd3636 !default;
