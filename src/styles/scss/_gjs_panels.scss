@@ -13,6 +13,15 @@
     var(--tw-backdrop-sepia);
 }
 
+@mixin shadow-lg() {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .#{$pn-prefix} {
   &panel {
     // display: none;
@@ -21,6 +30,7 @@
     text-align: center;
     padding: 5px;
     z-index: 3;
+
     .icon-undo,
     .icon-redo {
       font-size: 20px;
@@ -38,6 +48,8 @@
     display: flex;
     justify-content: center;
     @include deetsborder;
+    @include backdrop-blur-lg;
+    @include shadow-lg;
   }
 
   &options {
@@ -57,12 +69,14 @@
   &views {
     top: 10px;
     right: 10px;
-
+    @include shadow-lg;
     @include deetsborder;
+    @include backdrop-blur-lg;
     right: 10px;
     width: $leftWidth;
     padding-top: -1px;
     z-index: 4;
+    background-color: rgba(255, 255, 255, 0.537);
 
     &-container {
       position: absolute;
